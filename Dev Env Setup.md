@@ -9,9 +9,10 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh ] && / "$NVM_DIR/nvm.sh"
 ```
-## nvim with ([kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim))
+## zsh-autosuggestions
 ```sh
-git clone https://github.com/kedarmd/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+# Add next line to .zshrc
 ```
 * Use the latest version of Neovim
 ## [lazygit](https://github.com/jesseduffield/lazygit)
