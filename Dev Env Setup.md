@@ -14,6 +14,9 @@ curl -o- "https://raw.githubusercontent.com/nvm-sh/nvm/v$NVM_VERSION/install.sh"
 # ~./zshrc
 export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh ] && / "$NVM_DIR/nvm.sh"
+
+# install latest LTS version
+nvm install --lts
 ```
 ## git
 ```sh
