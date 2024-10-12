@@ -62,19 +62,13 @@ sudo apt update
 sudo apt install wezterm
 ```
 
-## [warp](https://www.warp.dev/)
-Get themes from [kedarmd/warp-themes](https://github.com/kedarmd/warp-themes)
-Download the `.yml` file and run following command
-```sh
-mv ~/Downloads/{{filename}}.yml ~/.local/share/warp-terminal/themes/
-```
-
 ## Nerd Font
 ```sh
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
 unzip JetBrainsMono.zip -d ~/Downloads/JetBrainsMono
-find ~/Downloads/JetBrainsMono -type f -name "*JetBrainsMonoNerdFont-Regular.ttf" -exec mv {} ~/.local/share/fonts/ \;
+find ~/Downloads/JetBrainsMono -type f -name "*JetBrainsMonoNerdFontMono-Regular.ttf" -exec mv {} ~/.local/share/fonts/ \;
 rm -rf ~/Downloads/JetBrainsMono
+rm -r ~/JetBrainsMono.zip
 fc-cache -fv
 ```
 
