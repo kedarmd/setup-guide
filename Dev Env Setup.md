@@ -15,6 +15,13 @@ curl -o- "https://raw.githubusercontent.com/nvm-sh/nvm/v$NVM_VERSION/install.sh"
 export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh ] && / "$NVM_DIR/nvm.sh"
 ```
+## git
+```sh
+sudo apt install git
+git config --global user.name "kedarmd"
+git config --global user.email "dindekedar@gmail.com.com"
+```
+
 ## zsh-autosuggestions
 ```sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
