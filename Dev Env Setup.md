@@ -50,6 +50,7 @@ curl -sS https://starship.rs/install.sh | sh
 eval "$(starship init zsh)"
 ```
 * create a file named `starship.toml` to configure the theme and place it in `~/.config`
+
 ## WezTerm
 ```sh
 curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /usr/share/keyrings/wezterm-fury.gpg
@@ -57,6 +58,7 @@ echo 'deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://apt.fury.io/w
 sudo apt update
 sudo apt install wezterm
 ```
+
 ## [warp](https://www.warp.dev/)
 Get themes from [kedarmd/warp-themes](https://github.com/kedarmd/warp-themes)
 Download the `.yml` file and run following command
@@ -72,6 +74,13 @@ find ~/Downloads/JetBrainsMono -type f -name "*JetBrainsMonoNerdFont-Regular.ttf
 rm -rf ~/Downloads/JetBrainsMono
 fc-cache -fv
 ```
+
+## Neovim & required dependencies
+```sh
+sudo snap install nvim --classic
+sudo apt install make gcc ripgrep unzip
+```
+
 ## postman
 ## vscode
 
