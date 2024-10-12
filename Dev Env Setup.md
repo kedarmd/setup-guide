@@ -75,7 +75,7 @@ fc-cache -fv
 ## Neovim & required dependencies
 ```sh
 sudo snap install nvim --classic
-sudo apt install make gcc ripgrep unzip
+sudo apt install make gcc ripgrep unzip xclip xsel
 ```
 
 ## postman
