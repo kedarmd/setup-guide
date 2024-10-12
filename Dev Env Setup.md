@@ -21,6 +21,14 @@ sudo apt install git
 git config --global user.name "kedarmd"
 git config --global user.email "dindekedar@gmail.com.com"
 ```
+## github ssh
+```sh
+ssh-keygen -t ed25519 -C "dindekedar@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+# to get ssh key
+cat ~/.ssh/id_ed25519.pub
+```
 
 ## zsh-autosuggestions
 ```sh
