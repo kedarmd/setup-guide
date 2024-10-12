@@ -63,6 +63,15 @@ Download the `.yml` file and run following command
 ```sh
 mv ~/Downloads/{{filename}}.yml ~/.local/share/warp-terminal/themes/
 ```
+
+## Nerd Font
+```sh
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
+unzip JetBrainsMono.zip -d ~/Downloads/JetBrainsMono
+find ~/Downloads/JetBrainsMono -type f -name "*JetBrainsMonoNerdFont-Regular.ttf" -exec mv {} ~/.local/share/fonts/ \;
+rm -rf ~/Downloads/JetBrainsMono
+fc-cache -fv
+```
 ## postman
 ## vscode
 
