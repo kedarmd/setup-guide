@@ -19,7 +19,7 @@ export NVM_DIR=~/.nvm
 ```sh
 sudo apt install git
 git config --global user.name "kedarmd"
-git config --global user.email "dindekedar@gmail.com.com"
+git config --global user.email "dindekedar@gmail.com"
 ```
 ## github ssh
 ```sh
