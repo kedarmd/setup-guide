@@ -19,6 +19,7 @@ export NVM_DIR=~/.nvm
 ```sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 # Add next line to .zshrc
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ```
 ## [lazygit](https://github.com/jesseduffield/lazygit)
 ```sh
