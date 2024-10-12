@@ -5,7 +5,12 @@ sudo chsh -s $(which zsh)
 ```
 ## nvm
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+# Get the latest version of NVM
+NVM_VERSION=$(curl -s "https://api.github.com/repos/nvm-sh/nvm/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
+
+# Use the version in the curl command
+curl -o- "https://raw.githubusercontent.com/nvm-sh/nvm/v$NVM_VERSION/install.sh" | bash
+
 # ~./zshrc
 export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh ] && / "$NVM_DIR/nvm.sh"
