@@ -66,7 +66,7 @@ sudo apt install wezterm
 ```sh
 wget "https://github.com/ryanoasis/nerd-fonts/releases/download/v$(curl -s "https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')/JetBrainsMono.zip"
 unzip JetBrainsMono.zip -d ~/Downloads/JetBrainsMono
-find ~/Downloads/JetBrainsMono -type f -name "*JetBrainsMonoNerdFontMono-Regular.ttf" -exec mv {} ~/.local/share/fonts/ \;
+find ~/Downloads/JetBrainsMono -type f -name "*JetBrainsMonoNerdFontMono-Regular.ttf" -exec bash -c 'mkdir -p ~/.local/share/fonts && mv "$1" ~/.local/share/fonts/' bash {} \;
 rm -rf ~/Downloads/JetBrainsMono
 rm -r ~/JetBrainsMono.zip
 fc-cache -fv
