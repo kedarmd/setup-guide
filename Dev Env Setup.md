@@ -72,6 +72,13 @@ rm -r ~/JetBrainsMono.zip
 fc-cache -fv
 ```
 
+## TMUX
+```sh
+sudo apt install tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+tmux source ~/.tmux.conf
+```
+
 ## Neovim & required dependencies
 ```sh
 sudo snap install nvim --classic
