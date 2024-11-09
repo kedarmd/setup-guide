@@ -77,13 +77,7 @@ fc-cache -fv
 sudo snap install nvim --classic
 sudo apt install make gcc ripgrep unzip xclip xsel
 ```
-## Wezterm
-```sh
-curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /etc/apt/keyrings/wezterm-fury.gpg
-echo 'deb [signed-by=/etc/apt/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *' | sudo tee /etc/apt/sources.list.d/wezterm.list
-sudo apt update
-sudo apt install wezterm
-```
+
 ## postman
 ## vscode
 
