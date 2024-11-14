@@ -85,6 +85,11 @@ sudo snap install nvim --classic
 sudo apt install make gcc ripgrep unzip xclip xsel
 ```
 
+## Deno
+```sh
+curl -fsSL https://deno.land/install.sh | sudo DENO_INSTALL=/usr/local sh
+```
+
 ## postman
 ## vscode
 
