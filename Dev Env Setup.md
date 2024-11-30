@@ -61,7 +61,10 @@ echo 'deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://apt.fury.io/w
 sudo apt update
 sudo apt install wezterm
 ```
-
+Now install [nvim-wez-navigator](https://github.com/kedarmd/nvim-wez-navigator) for better Neovim-WezTerm Navigation
+```sh
+git clone https://github.com/kedarmd/nvim-wez-navigator.git ~/.config/wezterm/plugins/nvim-wez-navigator/
+```
 ## Nerd Font
 ```sh
 wget "https://github.com/ryanoasis/nerd-fonts/releases/download/v$(curl -s "https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')/JetBrainsMono.zip"
